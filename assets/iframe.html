@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<link rel="stylesheet" href="main.css">
+		<script src="https://cdn.jsdelivr.net/g/lodash@4.3.0,handlebarsjs@4.0.5,jquery@2.2.0"></script>
+ 	  <script src="https://assets.zendesk.com/apps/sdk/2.0/zaf_sdk.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+		<script id="targets" type="text/x-handlebars-template">
+			<p id="target-list">  
+				{{#each targets}}
+					<span>{{targetEmail}}</span><button class="add-zcc" value={{targetId}}>Add BCC</button></br>
+				{{/each}}
+			</p>
+			<span>The email addresses below are BCCs on this ticket.  Click Remove BCC to remove it.  Make sure to submit the ticket to save!</span>
+			<p id="bcc-list">
+				{{#each tags}}
+					<span>{{tagEmail}}</span><button class="remove-zcc" value={{tagId}}>Remove BCC</button></br>
+				{{/each}}			
+			</p>  
+		</script>
+
+	</head>
+	<body>
+	  <h2>ZCC</h2>
+	  <span>Click on Add BCC to add the email address as a BCC.  Make sure to submit the ticket to save!</span>  
+	  <div id="target-container"></div>  
+  	<script src="ticket.js"></script>
+	</body>
+</html>

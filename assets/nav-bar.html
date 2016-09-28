@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<link rel="stylesheet" href="main.css">
+		<script src="https://cdn.jsdelivr.net/g/lodash@4.3.0,handlebarsjs@4.0.5,jquery@2.2.0"></script>
+ 	  <script src="https://assets.zendesk.com/apps/sdk/2.0/zaf_sdk.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+		<script id="targets" type="text/x-handlebars-template">
+			{{#each triggers}}
+				<span>{{triggerTitle}}   </span><button class="remove-zcc" value={{triggerId}} data-target-id={{targetId}}>Remove</button></br>
+			{{/each}}
+		</script>
+
+	</head>
+	<body>
+	  <div class="container" id="target-container">
+	  	<h2>ZCC - Admin</h2>
+			<span id="create-BCC-container">Enter an email address below to add a BCC to the list available to agents</span><br /><br />
+			<input id="new-email-address" type="email" placeholder="Email@address.com" /><button id="create-BCC">Add BCC</button><br /><br />
+			<span id="list-BCC">Below is a list of the BCCs currently available to agents.  Click the Remove button to remove it!</span>
+			<p id="target-list"></p>  
+	  </div>
+  	<script src="main.js"></script>
+	</body>
+</html>

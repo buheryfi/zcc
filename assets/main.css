@@ -1,0 +1,19 @@
+.container {
+	text-align:center;
+	padding:5px;
+	margin:5px;
+	background-color: #f2f2f2;
+	border-radius: 5px;
+}
+
+h2 {
+	text-align: center;
+}
+
+#target-list, #bcc-list {
+	display: block;
+	text-align:center;
+	background-color: #f2f2f2;
+	padding: 5px;
+	border-radius:3px;
+}
