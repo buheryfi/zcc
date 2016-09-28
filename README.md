@@ -5,5 +5,6 @@ The ZCC App adds BCC functionality into Zendesk ticketing.  First an Admin must 
 Please submit bug reports to [ZCC](https://github.com/zendesklabs/zcc). Pull requests are welcome.
 
 ### Screenshot(s):
-![My image](http://url/to/image/png)
-![My image](http://url/to/image/png)
+![](https://github.com/buheryfi/zcc/blob/master/assets/screenshot-0.png)
+![](https://github.com/buheryfi/zcc/blob/master/assets/screenshot-1.png)
+![](https://github.com/buheryfi/zcc/blob/master/assets/screenshot-2.png)
